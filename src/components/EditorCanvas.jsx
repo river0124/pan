@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import HeaderToolbar from './HeaderToolbar';
 import './EditorCanvas.css';
 
@@ -6,6 +6,27 @@ function EditorCanvas() {
   const editorRef = useRef(null);
   const [result, setResult] = useState('');
   const [loading, setLoading] = useState(false);
+  const [scale, setScale] = useState(1);
+
+  useEffect(() => {
+    const handleWheel = (e) => {
+      if (e.ctrlKey) {
+        e.preventDefault();
+        setScale((prev) => Math.min(3, Math.max(0.25, prev - e.deltaY * 0.005)));
+      }
+    };
+
+    const wrapper = document.querySelector('.editor-wrapper');
+    if (wrapper) {
+      wrapper.addEventListener('wheel', handleWheel, { passive: false });
+    }
+
+    return () => {
+      if (wrapper) {
+        wrapper.removeEventListener('wheel', handleWheel);
+      }
+    };
+  }, []);
 
   const handleCommand = (command, value = null) => {
     document.execCommand(command, false, value);
@@ -81,23 +102,54 @@ ${rawText}`
   };
 
   return (
-    <div>
-      <HeaderToolbar 
-        onCommand={handleCommand} 
-        onHwpUpload={(hwpText) => {
-          if (editorRef.current) {
-            editorRef.current.innerHTML = hwpText;
-          }
-        }} 
-      />
+    <div className="editor-container" style={{ height: '100vh', overflow: 'hidden' }}>
+      <div className="editor-toolbar-fixed" style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100%',
+        zIndex: 1000,
+        backgroundColor: '#f8f8f8'
+      }}>
+        <HeaderToolbar 
+          onCommand={handleCommand} 
+          onHwpUpload={(hwpText) => {
+            if (editorRef.current) {
+              editorRef.current.innerHTML = hwpText;
+            }
+          }} 
+        />
+      </div>
       
       <div
-        className="editor-area"
-        contentEditable
-        ref={editorRef}
-        suppressContentEditableWarning
+        className="editor-wrapper"
+        style={{
+          height: 'calc(100vh - 60px)',
+          width: '100vw',
+          backgroundColor: '#999',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'start',
+          overflow: 'auto',
+          marginTop: '60px'
+        }}
       >
-        {/* 여기에 시나리오를 입력하세요 */}
+        <div
+          className="editor-area editor-a4"
+          contentEditable
+          ref={editorRef}
+          suppressContentEditableWarning
+          style={{
+            transform: `scale(${scale})`,
+            width: '794px',
+            height: '1123px',
+            backgroundColor: '#fff',
+            transformOrigin: 'top center',
+            marginTop: '40px'
+          }}
+        >
+          {/* 여기에 시나리오를 입력하세요 */}
+        </div>
       </div>
 
       <div style={{ textAlign: 'right', padding: '10px' }}>

@@ -10,3 +10,34 @@
   white-space: pre-wrap;
   outline: none;
 }
+
+.editor-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #aaa;
+  width: 100vw;
+  height: auto;
+  overflow: auto;
+  touch-action: none;
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.editor-a4 {
+  width: 210mm;
+  height: 297mm;
+  background-color: white;
+  padding: 30mm 25mm;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-family: "Apple SD 산돌고딕 Neo", "Malgun Gothic", sans-serif;
+  font-size: 11pt;
+  transform-origin: top center;
+  transition: transform 0.01s ease-out;
+  will-change: transform;
+  touch-action: pan-x pan-y;
+  margin-top: 0;
+}
