@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+
+def main():
+    import sys
+    import os.path
+    from subprocess import check_call
+    from subprocess import Popen
+    import shutil
+
+    if sys.platform == 'win32':
+        src = '${lxml-location}'
+        dst = sys.argv[1]
+        src_path = os.path.join(src, 'lxml')
+        dst_path = os.path.join(dst, 'lxml')
+        print('lxml src: %s' % src_path)
+        print('lxml dst: %s' % dst_path)
+        if os.path.exists(src_path):
+            print('lxml: copytree-ing...')
+            shutil.copytree(src_path, dst_path)
+        else:
+            print('lxml: not found. skipping...')
+        sys.exit(0)
+    else:
+        check_call(['pip', 'install', 'lxml'])
+
+if __name__ == '__main__':
+    main()

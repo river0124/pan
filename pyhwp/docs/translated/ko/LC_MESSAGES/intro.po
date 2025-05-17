@@ -1,0 +1,206 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, mete0r
+# This file is distributed under the same license as the pyhwp package.
+# mete0r <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pyhwp 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-31 08:31+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: mete0r <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# 229d7f6cb6e94b80b3ed276154632ea7
+#: ../../intro.rst:2
+msgid "pyhwp"
+msgstr ""
+
+# 75c5f1d6ce704cfb987f218ddac8e5c9
+#: ../../intro.rst:4
+msgid "HWP Document Format v5 parser & processor."
+msgstr "HWP 문서 포맷 버젼5 파서 & 처리기"
+
+# bdea2ae9aea14b619ceab66b9f6d685c
+#: ../../intro.rst:7
+msgid "Features"
+msgstr "기능"
+
+# 6b057a4ced754848bd138b559238556f
+#: ../../intro.rst:9
+msgid ""
+"Analyze and extract internal streams out from a HWP Document Format v5 file"
+msgstr "HWP 문서 버젼 5 파일의 내부 스트림을 분석/분리"
+
+# a68f3e9e704d45dda4278f0efaf64d8a
+#: ../../intro.rst:10
+msgid ""
+"(*Experimental*) Conversion to OpenDocument format (.odt) or plain text (."
+"txt)"
+msgstr "(*실험적*) OpenDocument 포맷(.odt)나 일반 텍스트 문서로 변환"
+
+# ea5a3a8d49cc413eb9ef1fa6f58633ff
+#: ../../intro.rst:13
+msgid "Installation"
+msgstr "설치"
+
+# 0d7548139cea4b37bb2298584800bffc
+#: ../../intro.rst:15
+msgid "from `pypi <http://pypi.python.org/pypi/pyhwp>`_::"
+msgstr "`pypi <http://pypi.python.org/pypi/pyhwp>`_ 에서::"
+
+# 33cd4af4dc6f496bbea8284505308c83
+#: ../../intro.rst:20
+msgid "Or::"
+msgstr "혹은::"
+
+# da4c2f33f39048e9a72ad43807cd7e37
+#: ../../intro.rst:25
+msgid "Requirements"
+msgstr "필요한 것"
+
+# db6d63914fb2413d92e5701b694e2b22
+#: ../../intro.rst:27
+msgid "CPython 2.5, 2.6, 2.7, Jython 2.5.3 or PyPy 2.0.2"
+msgstr "CPython 2.5, 2.6, 2.7, Jython 2.5.3 혹은 PyPy 2.0.2"
+
+# 0d7548139cea4b37bb2298584800bffc
+#: ../../intro.rst:28
+msgid "`setuptools <http://pypi.python.org/pypi/setuptools>`_"
+msgstr ""
+
+# 2cab7c2a85d34ff7adc294b7e48d5575
+#: ../../intro.rst:29
+msgid ""
+"`pycrypto <https://pypi.python.org/pypi/pycrypto>`_ (optional, to decode "
+"distribution docs)"
+msgstr ""
+"`pycrypto <https://pypi.python.org/pypi/pycrypto>`_ (선택적, 배포용 문서"
+"읽기에 필요)"
+
+# 070821d20ddc4c6cb15fa70632bf6523
+#: ../../intro.rst:32
+msgid "Documentation & Development"
+msgstr "문서화 및 개발"
+
+# 8228a1248e8b4f6fb82be453d4ef4135
+#: ../../intro.rst:34
+msgid ""
+"Documentation: `http://pythonhosted.org/pyhwp/ <http://pythonhosted.org/"
+"pyhwp/>`_ [`한국/조선어 <http://pythonhosted.org/pyhwp/ko/>`_] [`develop "
+"branch <http://pyhwp.readthedocs.org>`_]"
+msgstr ""
+"문서화: `http://pythonhosted.org/pyhwp/ko <http://pythonhosted.org/pyhwp/"
+"ko>`_ [`English <http://pythonhosted.org/pyhwp>`_] [`개발 branch <http://"
+"pyhwp.readthedocs.org>`_]"
+
+# 0d7548139cea4b37bb2298584800bffc
+#: ../../intro.rst:35
+msgid ""
+"Distribution: `http://pypi.python.org/pypi/pyhwp <http://pypi.python.org/"
+"pypi/pyhwp>`_"
+msgstr ""
+"배포: `http://pypi.python.org/pypi/pyhwp <http://pypi.python.org/pypi/"
+"pyhwp>`_"
+
+# f0f93a1ed81747dc9c7a3c631b971e86
+#: ../../intro.rst:36
+msgid ""
+"Development: `https://github.com/mete0r/pyhwp <https://github.com/mete0r/"
+"pyhwp>`_"
+msgstr ""
+"개발: `https://github.com/mete0r/pyhwp <https://github.com/mete0r/pyhwp>`_"
+
+# f0f93a1ed81747dc9c7a3c631b971e86
+#: ../../intro.rst:37
+msgid ""
+"Issue tracker: `https://github.com/mete0r/pyhwp/issues <https://github.com/"
+"mete0r/pyhwp/issues>`_"
+msgstr ""
+"버그 추적: `https://github.com/mete0r/pyhwp/issues <https://github.com/"
+"mete0r/pyhwp/issues>`_"
+
+# 317c633c180a4bda8045e2a5b1e757cf
+#: ../../intro.rst:38
+msgid "Feedbacks & contributions are welcome!"
+msgstr "피드백이나 기여 환영합니다."
+
+# b200736b60a04a8480b72cb24a513db0
+#: ../../intro.rst:41
+msgid "Contributors"
+msgstr "기여한 이들"
+
+# 38b9e22103b4432eaf4fdf9f452bc3e3
+#: ../../intro.rst:43
+msgid "Maintainer: `mete0r <https://github.com/mete0r>`_"
+msgstr "Maintainer: `mete0r <https://github.com/mete0r>`_"
+
+# 3968cb8206a14f398a248eed814ad9aa
+#: ../../intro.rst:46
+msgid "License"
+msgstr "사용허가"
+
+# d64dabb371984d2ba250f37e220aa39a
+#: ../../intro.rst:48
+msgid "Copyright (C) 2010-2023 mete0r <https://github.com/mete0r>"
+msgstr ""
+
+# 32ed7d69ae9f4bf5bff4e8d68c113f4c
+#: ../../intro.rst:52
+msgid ""
+"`GNU Affero General Public License v3.0 <http://www.gnu.org/licenses/"
+"agpl-3.0.html>`_ `(text version) <http://www.gnu.org/licenses/agpl-3.0.txt>`_"
+msgstr ""
+
+# 164415d866774a9e9e7ad1008447cf74
+#: ../../intro.rst:55
+msgid ""
+"This program is free software: you can redistribute it and/or modify it "
+"under the terms of the GNU Affero General Public License as published by the "
+"Free Software Foundation, either version 3 of the License, or (at your "
+"option) any later version."
+msgstr ""
+
+# 6cc8ef94865e4196898a83b1b80dd2e5
+#: ../../intro.rst:60
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License "
+"for more details."
+msgstr ""
+
+# d54697f2f7dc44869d43637b7e5dcb68
+#: ../../intro.rst:65
+msgid ""
+"You should have received a copy of the GNU Affero General Public License "
+"along with this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+
+# c3270c668ef7418e951ef0bc8ac17fdd
+#: ../../intro.rst:69
+msgid "Disclosure"
+msgstr "공개"
+
+# df57575778df4329940de5a8a2999e73
+#: ../../intro.rst:71
+msgid ""
+"This program has been developed in accordance with a public document named "
+"\"HWP Binary Specification 1.1\" published by `Hancom Inc. <http://www."
+"hancom.co.kr>`_"
+msgstr ""
+"pyhwp는 `(주)한글과컴퓨터 <http://www.hancom.co.kr>`_ 의 한/글 문서 파일(."
+"hwp) 공개 문서를 참고하여 개발하였습니다."
+
+# d21d1a96770c48399bf7d7962f96c816
+#~ msgid ""
+#~ "Documentation: `http://pyhwp.readthedocs.org <http://pyhwp.readthedocs."
+#~ "org>`_"
+#~ msgstr ""
+#~ "문서화: `http://pyhwp.readthedocs.org <http://pyhwp.readthedocs.org>`_"

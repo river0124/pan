@@ -1,0 +1,1 @@
+This extension enables you to read HWP Documents (v5 formats only).

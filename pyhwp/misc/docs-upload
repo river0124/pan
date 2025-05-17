@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# exit if any statement returns non-true return value
+set -e
+
+# exit on uninitialized variable
+set -u
+
+HTML_BASE=${buildout:directory}/docs/.build/html
+BUILD_DIR=${buildout:directory}/build
+
+cd ${buildout:directory}
+
+[ -d $BUILD_DIR/docs/ ] || (echo $BUILD_DIR/docs/ missing; exit 1)
+[ -d $BUILD_DIR/docs/ko/ ] || (echo $BUILD_DIR/docs/ko/ missing; exit 1)
+
+python setup.py upload_docs -r https://pypi.python.org/pypi --upload-dir=$BUILD_DIR/docs
