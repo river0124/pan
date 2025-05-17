@@ -4,7 +4,7 @@
   "description": "AI 시나리오 분석 웹앱 (React + Express + Gemini)",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"vite\" \"node server.js\"",
     "build": "vite build",
     "serve": "vite preview",
     "start": "node server.js"
