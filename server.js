@@ -81,8 +81,6 @@ app.post('/api/convert-hwp-txt', upload.single('file'), (req, res) => {
         console.error('❌ 변환된 파일 읽기 실패:', readErr);
         return res.status(500).json({ error: '변환된 파일 읽기 실패' });
       }
-
-      console.log('✅ 변환된 텍스트 내용 일부:', text.slice(0, 200));
       res.json({ richText: `<pre>${text}</pre>` });
     });
   });
