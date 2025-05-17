@@ -82,7 +82,14 @@ ${rawText}`
 
   return (
     <div>
-      <HeaderToolbar onCommand={handleCommand} />
+      <HeaderToolbar 
+        onCommand={handleCommand} 
+        onHwpUpload={(hwpText) => {
+          if (editorRef.current) {
+            editorRef.current.innerHTML = hwpText;
+          }
+        }} 
+      />
       
       <div
         className="editor-area"
