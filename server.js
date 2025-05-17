@@ -42,7 +42,7 @@ app.post('/api/analyze', async (req, res) => {
 
     console.log('📡 응답 코드:', response.status);
     const data = await response.json();
-    console.log('🧠 Gemini 응답:', data);
+    console.log('🧠 Gemini 응답:', JSON.stringify(data, null, 2));
 
     res.json(data);
   } catch (err) {
