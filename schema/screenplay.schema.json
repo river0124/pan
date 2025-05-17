@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Screenplay Schema",
+  "description": "한국형 시나리오 포맷을 위한 JSON 스키마",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "시나리오 제목"
+    },
+    "scenes": {
+      "type": "array",
+      "description": "전체 씬 리스트",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sceneNumber": {
+            "type": "string",
+            "description": "씬 번호 (예: 1, 2A, 3B)"
+          },
+          "heading": {
+            "type": "string",
+            "description": "씬 헤딩 (예: INT. 카페 - 낮)"
+          },
+          "action": {
+            "type": "string",
+            "description": "씬 설명 / 액션"
+          },
+          "dialogues": {
+            "type": "array",
+            "description": "대사 목록",
+            "items": {
+              "type": "object",
+              "properties": {
+                "character": {
+                  "type": "string",
+                  "description": "등장인물 이름"
+                },
+                "dialogue": {
+                  "type": "string",
+                  "description": "대사 내용"
+                },
+                "modifier": {
+                  "type": "string",
+                  "description": "V.O, O.S 등 선택적 수식어",
+                  "enum": ["V.O", "O.S", "OFF", "NONE"],
+                  "default": "NONE"
+                }
+              },
+              "required": ["character", "dialogue"]
+            }
+          }
+        },
+        "required": ["sceneNumber", "heading", "action"]
+      }
+    }
+  },
+  "required": ["title", "scenes"]
+}
