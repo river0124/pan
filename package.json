@@ -1,18 +1,24 @@
 {
-  "name": "the-scenario",
+  "name": "scenario-app",
   "version": "1.0.0",
+  "description": "AI 시나리오 분석 웹앱 (React + Express + Gemini)",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start": "vite preview --host --port 3000"
+    "serve": "vite preview",
+    "start": "node server.js"
   },
   "dependencies": {
-    "openai": "^4.100.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.4.1",
-    "vite": "^6.3.5"
+    "@vitejs/plugin-react": "^4.0.3",
+    "vite": "^5.0.0"
   }
 }
