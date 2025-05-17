@@ -1,0 +1,12 @@
+.editor-area {
+  min-height: 80vh;
+  padding: 20px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-family: 'Courier New', monospace;
+  line-height: 1.6;
+  font-size: 16px;
+  white-space: pre-wrap;
+  outline: none;
+}

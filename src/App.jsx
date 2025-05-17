@@ -1,4 +1,12 @@
+import React from 'react';
+import EditorCanvas from './components/EditorCanvas';
+
 function App() {
-  return <h1>Hello from Vite + React! 씨발 리액트는 첨이야!</h1>
+  return (
+    <div>
+      <EditorCanvas />
+    </div>
+  );
 }
-export default App
+
+export default App;

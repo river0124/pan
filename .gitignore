@@ -32,6 +32,7 @@ Dockerfile*
 # 민감 정보
 **/secrets.dev.yaml
 **/values.dev.yaml
+.env
 
 # 보통은 커밋에 포함하는 파일 (필요 없으면 유지)
 # LICENSE
