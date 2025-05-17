@@ -113,6 +113,8 @@ ${rawText}`
             background: '#f4f4f4',
             padding: '16px',
             marginTop: '20px',
+            overflowY: 'auto',
+            maxHeight: '500px',
           }}
         >
           {result}
