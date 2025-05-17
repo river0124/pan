@@ -1,3 +1,0 @@
-#!/bin/sh
-cd ${buildout:directory}
-python setup.py sdist upload --sign

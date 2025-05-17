@@ -1,1 +1,0 @@
-../../../pyhwp-tests/README.rst

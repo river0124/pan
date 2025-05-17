@@ -1,6 +1,0 @@
-#!/bin/sh
-
-# usage: git bisect run bin/test-for-bisect
-
-cd ${buildout:directory}
-bin/buildout -o && bin/test && exit 0 || exit 1
